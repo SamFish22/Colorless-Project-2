@@ -13,6 +13,8 @@ public class Gun : MonoBehaviour
 
     List<Material> materials = new List<Material>();
 
+    public GameObject effect;
+
     private int matIndex = 0;
     public GameObject broom;
 
@@ -28,6 +30,8 @@ public class Gun : MonoBehaviour
         black = Resources.Load("Materials/black", typeof(Material)) as Material;
         puppy = Resources.Load("Materials/puppy", typeof(Material)) as Material;
         karaman = Resources.Load("Materials/karaman", typeof(Material)) as Material;
+
+        effect = Resources.Load("DustStorm", typeof(GameObject)) as GameObject;
 
         materials.Add(red);
         materials.Add(orange);
@@ -77,7 +81,9 @@ public class Gun : MonoBehaviour
                 tar.GetComponent<MeshRenderer>().material = materials[matIndex];
                
             }
-
+            
         }
+        Vector3 v = new Vector3(Random.Range(870.7f, 943.1f), -7.11f, Random.Range(322.5f, 482.22f));
+        Instantiate(effect, v, Quaternion.Inverse(Quaternion.identity));
     }
 }

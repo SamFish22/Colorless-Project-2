@@ -550,6 +550,7 @@ MonoBehaviour:
   black: {fileID: 2100000, guid: ab8e8f274ac71b048aa7ee5021e51ba8, type: 2}
   puppy: {fileID: 2100000, guid: 2accde3cb559d9048a681fd9cfef45eb, type: 2}
   karaman: {fileID: 2100000, guid: 8612ea624d54a8341ae215045d5be402, type: 2}
+  effect: {fileID: 0}
   broom: {fileID: 1896683579}
 --- !u!1 &118009483 stripped
 GameObject:
@@ -7281,7 +7282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1819429851}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 874.25903, y: -11.05941, z: 400.7959}
+  m_LocalPosition: {x: 874.8, y: -11.05941, z: 400.7959}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 756688676}
